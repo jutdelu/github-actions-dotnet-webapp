@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 * * * *' # Executa a cada hora
+    - cron: '0 * * * *' 
 
 jobs:
   push_job:
@@ -17,7 +17,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '6.0.x' # Pode ser ajustado para a versão específica do .NET
+          dotnet-version: '6.0.x' 
 
       - name: Restore dependencies
         run: dotnet restore
